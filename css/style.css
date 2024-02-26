@@ -185,7 +185,7 @@ background-image: url("../recursos/franky.webp");
     }
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
     .imgtodas {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -194,4 +194,4 @@ background-image: url("../recursos/franky.webp");
             "imagen-grande imagen-grande chopperimg frankyimg";
     }
 
-} */
+}
