@@ -90,11 +90,8 @@ p {
     text-align: center;
 }
 
-.subrayado {
+.subrayado-mayuscula {
     text-decoration: underline;
-}
-
-.mayuscula {
     text-transform: uppercase;
 }
 
@@ -123,12 +120,6 @@ p {
     margin: auto;
 }
 
-/* h3 {
-    color: rgb(165, 42, 42);
-    text-transform: none;
-    text-decoration: underline;
-    text-align: start;
-} */
 
 
 .imgtodas {
