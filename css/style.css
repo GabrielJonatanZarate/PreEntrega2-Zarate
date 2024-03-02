@@ -95,18 +95,6 @@ p {
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* PAGINA DE ZORO */
 .giftzoro {
     grid-area: giftzoro;
@@ -127,6 +115,7 @@ p {
 }
 
 
+
 .todozoro {
     display: grid;
     grid-template-columns: 1fr;
@@ -140,6 +129,38 @@ p {
     margin: auto;
 }
 
+/* PAGINA DE SANJI */
+
+.ytsanji {
+    grid-area: ytsanji;
+    /* background-image: url("../recursos/sanji.png");
+    background-size: cover; */
+}
+
+.yttsanji{
+    grid-area: yttsanji;
+    /* background-image: url("../recursos/sanji.png");
+    background-size: cover; */
+}
+
+.sanjilargo{
+    grid-area: sanjilargo;
+    background-image: url("../recursos/sanjiparado.webp");
+    background-size: cover;
+}
+
+.todosanji {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-areas:
+        "ytsanji"
+        "yttsanji"
+        "sanjilargo"
+    ;
+    max-width: 1000px;
+    margin: auto;
+}
 
 
 /* PAGINA DE LUFFY */
@@ -227,6 +248,18 @@ background-image: url("../recursos/franky.webp");
         grid-template-areas:
             "giftzoro espadazoro espadazoro"
             "giftzoro muchasespadas muchasespadas";
+    }
+
+}
+
+
+@media (min-width: 600px) {
+    .todosanji {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "sanjilargo sanjilargo ytsanji"
+            "sanjilargo sanjilargo yttsanji"        
     }
 
 }
