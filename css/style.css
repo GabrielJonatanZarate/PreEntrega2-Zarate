@@ -36,14 +36,14 @@ img {
 }
 
 /* Pseudoclase */
-.navegacion li:hover{
+.navegacion li:hover {
     background-color: rgb(247, 219, 5);
     color: rgb(4, 4, 4);
     text-decoration: underline;
     transition: all .3s;
 }
 
-.navegacion li a:hover{
+.navegacion li a:hover {
     color: rgb(255, 0, 0);
     transition: all .4s;
 }
@@ -57,7 +57,7 @@ a {
     text-decoration: none;
 }
 
-.nav-abajo{
+.nav-abajo {
     align-items: flex-end;
 }
 
@@ -102,19 +102,17 @@ p {
     background-size: cover;
 }
 
-.espadazoro{
+.espadazoro {
     grid-area: espadazoro;
     background-image: url("../recursos/roronoa-zoro.jpg");
     background-size: cover;
 }
 
-.muchasespadas{
+.muchasespadas {
     grid-area: muchasespadas;
     background-image: url("../recursos/tercera-imagen-zoro.webp");
     background-size: cover;
 }
-
-
 
 .todozoro {
     display: grid;
@@ -131,19 +129,17 @@ p {
 
 /* PAGINA DE SANJI */
 
+
 .ytsanji {
     grid-area: ytsanji;
-    /* background-image: url("../recursos/sanji.png");
-    background-size: cover; */
 }
 
-.yttsanji{
+.yttsanji {
     grid-area: yttsanji;
-    /* background-image: url("../recursos/sanji.png");
-    background-size: cover; */
+
 }
 
-.sanjilargo{
+.sanjilargo {
     grid-area: sanjilargo;
     background-image: url("../recursos/sanjiparado.webp");
     background-size: cover;
@@ -152,7 +148,7 @@ p {
 .todosanji {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(3, 300px);
     grid-template-areas:
         "ytsanji"
         "yttsanji"
@@ -164,18 +160,22 @@ p {
 
 
 /* PAGINA DE LUFFY */
-.navbar .navbar-expand-lg .bg-primary img{
+.navbar .navbar-expand-lg .bg-primary img {
     flex-direction: row;
     align-items: flex-end;
 }
 
-.carousel-img{
+.carousel-img {
     width: 50%;
     margin: auto;
 }
 
 
 /* mobile first index */
+.audio {
+    margin: auto;
+}
+
 .imgtodas {
     display: grid;
     grid-template-columns: 1fr;
@@ -186,6 +186,7 @@ p {
         "zoroimg"
         "chopperimg"
         "frankyimg"
+        "audio"
     ;
     max-width: 1000px;
     margin: auto;
@@ -206,19 +207,19 @@ p {
 
 .zoroimg {
     grid-area: zoroimg;
-background-image: url("../recursos/Zoro.jpeg");
+    background-image: url("../recursos/Zoro.jpeg");
     background-size: cover;
 }
 
 .chopperimg {
     grid-area: chopperimg;
-background-image: url("../recursos/chopper-1.webp");
+    background-image: url("../recursos/chopper-1.webp");
     background-size: cover;
 }
 
 .frankyimg {
     grid-area: frankyimg;
-background-image: url("../recursos/franky.webp");
+    background-image: url("../recursos/franky.webp");
     background-size: cover;
 }
 
@@ -259,7 +260,7 @@ background-image: url("../recursos/franky.webp");
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
             "sanjilargo sanjilargo ytsanji"
-            "sanjilargo sanjilargo yttsanji"        
+            "sanjilargo sanjilargo yttsanji"
     }
 
 }
